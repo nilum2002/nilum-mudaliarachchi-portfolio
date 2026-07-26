@@ -1,0 +1,62 @@
+/* ==========================================================================
+   PROJECTS — grid of build entries
+   ========================================================================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.project-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.project-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__title {
+  font-size: var(--step-1);
+  margin: 0;
+}
+
+.project-card__desc {
+  color: var(--text-600);
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
+.project-card__stack {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.project-card__links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: auto;
+}
+.project-card__links a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}

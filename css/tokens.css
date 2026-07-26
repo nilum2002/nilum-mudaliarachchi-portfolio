@@ -1,0 +1,105 @@
+/* ==========================================================================
+   TOKENS — the notebook's ink, paper and rule set.
+   Every other stylesheet reads from these variables only.
+   ========================================================================== */
+
+:root {
+  /* Type */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --step--1: 0.8rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: 2.1rem;
+  --step-4: 2.9rem;
+
+  /* Spacing */
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.4rem;
+  --space-lg: 2.2rem;
+  --space-xl: 3.6rem;
+  --space-2xl: 5.6rem;
+
+  /* Layout */
+  --sidebar-w: 300px;
+  --content-max: 860px;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 220ms;
+}
+
+/* ---------- Light (paper) ---------- */
+:root,
+html[data-theme="light"] {
+  --ink-900: #14181f;
+  --ink-800: #1c2028;
+  --ink-700: #262b35;
+
+  --sidebar-bg: #ece7d8;
+  --sidebar-text: #1c1f26;
+  --sidebar-text-muted: #565b66;
+  --sidebar-text-active: #14181f;
+  --sidebar-role: #1f5854;
+
+  --paper-0: #fbfaf6;
+  --paper-50: #f4f1e8;
+  --paper-100: #ece7d8;
+
+  --text-900: #1c1f26;
+  --text-600: #565b66;
+  --text-400: #8b8f99;
+
+  --line: #ddd6c4;
+  --line-strong: #c9c0a6;
+
+  --accent: #2f7d76;
+  --accent-ink: #1f5854;
+  --accent-soft: rgba(47, 125, 118, 0.12);
+
+  --amber: #b9791f;
+  --amber-soft: rgba(185, 121, 31, 0.14);
+
+  --card-bg: var(--paper-0);
+  --shadow: 0 1px 2px rgba(20, 24, 31, 0.04), 0 6px 20px rgba(20, 24, 31, 0.05);
+}
+
+/* ---------- Dark (lab-at-night) ---------- */
+html[data-theme="dark"] {
+  --ink-900: #0b0e14;
+  --ink-800: #12151b;
+  --ink-700: #1a1e26;
+
+  --sidebar-bg: #12161f;
+  --sidebar-text: #f0ede6;
+  --sidebar-text-muted: #9aa1b2;
+  --sidebar-text-active: #ffffff;
+  --sidebar-role: #64d2c7;
+
+  --paper-0: #14171e;
+  --paper-50: #191d25;
+  --paper-100: #20242e;
+
+  --text-900: #f0ede6;
+  --text-600: #b0b6c4;
+  --text-400: #828896;
+
+  --line: #2a2f3a;
+  --line-strong: #383e4c;
+
+  --accent: #4fb3aa;
+  --accent-ink: #64d2c7;
+  --accent-soft: rgba(79, 179, 170, 0.18);
+
+  --amber: #d99a3d;
+  --amber-soft: rgba(217, 154, 61, 0.14);
+
+  --card-bg: var(--paper-50);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+}

@@ -1,0 +1,75 @@
+/* ==========================================================================
+   RESEARCH — catalog of papers
+   ========================================================================== */
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.research-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.research-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+
+.research-card__head {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.research-card__title {
+  font-size: var(--step-1);
+  margin: 0;
+  flex: 1;
+}
+
+.research-card__meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-400);
+  margin-bottom: var(--space-sm);
+}
+.research-card__meta .venue { color: var(--accent-ink); }
+
+.research-card__abstract {
+  color: var(--text-600);
+  margin-bottom: var(--space-sm);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--dur) var(--ease);
+}
+.research-card.is-open .research-card__abstract {
+  max-height: 20em;
+  margin-top: var(--space-sm);
+}
+
+.research-card__tags {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+}
+
+.research-card__links {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.research-card__toggle {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-400);
+  margin-left: auto;
+}
+.research-card__toggle:hover { color: var(--accent-ink); }

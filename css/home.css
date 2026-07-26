@@ -1,0 +1,101 @@
+/* ==========================================================================
+   HOME — cover page of the notebook
+   ========================================================================== */
+
+.home-hero__kicker {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-ink);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.home-hero h1 {
+  font-size: var(--step-4);
+  max-width: 14ch;
+  margin-bottom: var(--space-md);
+}
+
+.home-hero__lede {
+  max-width: 56ch;
+  font-size: var(--step-1);
+  color: var(--text-600);
+  margin-bottom: var(--space-lg);
+}
+
+.home-hero__actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-2xl);
+}
+
+/* Logbook stat stamps */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-2xl);
+}
+.stat {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  border-right: 1px solid var(--line);
+  background: var(--card-bg);
+}
+.stat:last-child { border-right: none; }
+.stat__num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  color: var(--text-900);
+}
+.stat__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-400);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.home-block {
+  margin-bottom: var(--space-2xl);
+}
+.home-block__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+.home-block__head h3 {
+  font-size: var(--step-2);
+  margin: 0;
+}
+.home-block__head a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.home-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.home-list__row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--line);
+}
+.home-list__row:last-child { border-bottom: none; }
+.home-list__date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-400);
+  min-width: 6.5ch;
+}
+.home-list__title { color: var(--text-900); font-weight: 500; }

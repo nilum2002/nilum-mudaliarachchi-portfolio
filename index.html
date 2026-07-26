@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-sidebar-open="false">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nilum Mudaliarachchi</title>
+<meta name="description" content="Portfolio and research logbook of Alex Rivera — ML researcher and full-stack engineer." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Tokens must load first — every other stylesheet reads from these variables -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/research.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/blogs.css">
+<link rel="stylesheet" href="css/achievements.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- Mobile top bar -->
+<div class="topbar" id="topbar-mount"></div>
+<div class="sidebar-scrim" id="sidebar-scrim"></div>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar-mount" aria-label="Sidebar"></aside>
+
+  <main class="content" id="content-scroll">
+    <div class="content__inner">
+
+      <section class="panel" id="panel-home"></section>
+      <section class="panel" id="panel-research"></section>
+      <section class="panel" id="panel-projects"></section>
+      <section class="panel" id="panel-blogs"></section>
+      <section class="panel" id="panel-achievements"></section>
+      <section class="panel" id="panel-about"></section>
+
+      <footer class="site-footer">
+        <span>&copy; <span id="footer-year"></span> Alex Rivera. Built by hand with HTML, CSS &amp; JS.</span>
+        <span>Design inspired by the <a href="https://chirpy.cotes.page" target="_blank" rel="noopener">Chirpy</a> layout.</span>
+      </footer>
+
+    </div>
+  </main>
+</div>
+
+<!-- Data (component-owned content, no markup) -->
+<script src="js/data/profile.js"></script>
+<script src="js/data/research.js"></script>
+<script src="js/data/projects.js"></script>
+<script src="js/data/blogs.js"></script>
+<script src="js/data/achievements.js"></script>
+
+<!-- Components (each owns one piece of UI) -->
+<script src="js/components/icons.js"></script>
+<script src="js/components/theme.js"></script>
+<script src="js/components/sidebar.js"></script>
+<script src="js/components/home.js"></script>
+<script src="js/components/research.js"></script>
+<script src="js/components/projects.js"></script>
+<script src="js/components/blogs.js"></script>
+<script src="js/components/achievements.js"></script>
+<script src="js/components/about.js"></script>
+<script src="js/components/router.js"></script>
+
+<!-- App bootstrap -->
+<script src="js/app.js"></script>
+
+<script>
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
