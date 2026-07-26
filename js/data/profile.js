@@ -9,12 +9,12 @@ window.PortfolioData.profile = {
   name: "Nilum Mudaliarachchi",
   initials: "NS",
   role: "Robotics | Embeded Systems | Machine Learning | Computer Vision",
-  kicker: "Field notes from the lab",
-  heroTitle: "I build systems, then write down what I learn.",
+  kicker: "",
+  heroTitle: "Hi, I'm Nilum.",
   heroLede:
-    "I'm a researcher and engineer working at the intersection of machine learning and " +
-    "distributed systems. This site is my running logbook — papers, projects, and the " +
-    "occasional write-up on how something actually got built.",
+    "I'm a 3rd year Computer Scinece and Engineering undergraduate in University of Moratuwa, Sri Lanka. " +
+    "I'm truly passionate about Robotics, Computer vision, Embeded Syatems and Machine Learning." +
+    "Looking for opportunities to learn and grow in these fields. I love to explore new technologies and apply them to solve real-world problems.",
   email: "nilumm.23@cse.mrt.ac.lk",
   socials: [
     { name: "GitHub", url: "https://github.com/nilum2002", icon: "github" },
@@ -28,10 +28,10 @@ window.PortfolioData.profile = {
     // { num: "6yr", label: "In the field" }
   ],
   bio: [
-    "I'm currently a research engineer focused on efficient training methods for large models, " +
-    "with a side obsession in making distributed systems easier to reason about.",
-    "Before this I spent three years shipping backend infrastructure at scale, which is where " +
-    "the 'full-stack' half of my title comes from — I like taking an idea from a whiteboard " +
+    "I'm currently an undergraduate in Computer Science and Engineering in University of Moratuwa, Sri Lanka. " +
+    "My specialization is Integrated Computer Engineering. I have a strong passion in Robotics, Computer Vision and Machine learing on Edge.",
+    "In field of Robotics, my interestes are in to Robot Navigation, Plaining and Perception. " +
+    "Specially in Social Navigation where I see a huge gap in current methodologies. " +
     "sketch to a running service and, sometimes, all the way to a paper.",
     "Outside of work I mentor early-career researchers, contribute to a couple of open-source " +
     "ML tooling projects, and am slowly working through every classic algorithms textbook I " +
