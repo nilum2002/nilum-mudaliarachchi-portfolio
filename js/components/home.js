@@ -21,8 +21,8 @@ window.PortfolioHome = (function () {
       "<h1>" + profile.heroTitle + "</h1>" +
       '<p class="home-hero__lede">' + profile.heroLede + "</p>" +
       '<div class="home-hero__actions">' +
-      '<a class="btn btn--solid" href="#research" data-nav-link="research">View research ' + window.PortfolioIcons.arrow + "</a>" +
-      '<a class="btn" href="#projects" data-nav-link="projects">View projects</a>' +
+      '<a class="btn btn--solid" href="#projects" data-nav-link="projects">View projects ' + window.PortfolioIcons.arrow + "</a>" +
+      '<a class="btn" href="#about" data-nav-link="about">About me</a>' +
       "</div>" +
       "</div>" +
 

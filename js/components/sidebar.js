@@ -37,6 +37,14 @@ window.PortfolioSidebar = (function () {
     }).join("");
   }
 
+  function renderAvatar(profile, extraClass) {
+    var cls = "avatar" + (extraClass ? " " + extraClass : "");
+    if (profile.avatarImg) {
+      return '<div class="' + cls + '"><img src="' + profile.avatarImg + '" alt="' + profile.name + '"></div>';
+    }
+    return '<div class="' + cls + '">' + profile.initials + '</div>';
+  }
+
   function render() {
     var profile = window.PortfolioData.profile;
     var mount = document.getElementById("sidebar-mount");
@@ -45,7 +53,7 @@ window.PortfolioSidebar = (function () {
 
     mount.innerHTML =
       '<div class="sidebar__identity">' +
-      '<div class="avatar">' + profile.initials + "</div>" +
+      renderAvatar(profile) +
       '<h1 class="sidebar__name">' + profile.name + "</h1>" +
       '<div class="sidebar__role">' + profile.role + "</div>" +
       "</div>" +
@@ -64,7 +72,7 @@ window.PortfolioSidebar = (function () {
 
     if (topbarMount) {
       topbarMount.innerHTML =
-        '<div class="topbar__brand"><div class="avatar">' + profile.initials + "</div>" + profile.name + "</div>" +
+        '<div class="topbar__brand">' + renderAvatar(profile) + profile.name + "</div>" +
         '<button type="button" class="topbar__menu-btn" id="drawer-toggle" aria-label="Open menu">' +
         window.PortfolioIcons.menu +
         "</button>";

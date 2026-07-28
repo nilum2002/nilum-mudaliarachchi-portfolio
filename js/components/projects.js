@@ -6,8 +6,7 @@ window.PortfolioProjects = (function () {
   function cardHTML(p) {
     return (
       '<article class="project-card" data-id="' + p.id + '">' +
-      '<div class="project-card__top"><h3 class="project-card__title">' + p.title + "</h3>" +
-      '<span class="tag-stamp">' + p.id + "</span></div>" +
+      '<div class="project-card__top"><h3 class="project-card__title">' + p.title + "</h3></div>" +
       '<p class="project-card__desc">' + p.desc + "</p>" +
       '<div class="project-card__stack">' +
       p.stack.map(function (s) { return '<span class="chip">' + s + "</span>"; }).join("") +

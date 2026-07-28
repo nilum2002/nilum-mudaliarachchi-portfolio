@@ -7,10 +7,9 @@ window.PortfolioResearch = (function () {
     return (
       '<article class="research-card" data-id="' + r.id + '">' +
       '<div class="research-card__head">' +
-      '<span class="tag-stamp">' + r.id + "</span>" +
       '<h3 class="research-card__title">' + r.title + "</h3>" +
       "</div>" +
-      '<div class="research-card__meta"><span class="venue">' + r.venue + "</span> &middot; " + r.year + " &middot; " + r.authors + "</div>" +
+      '<div class="research-card__meta">' + r.year + " &middot; " + r.authors + "</div>" +
       '<div class="research-card__tags">' +
       r.tags.map(function (t) { return '<span class="chip">' + t + "</span>"; }).join("") +
       "</div>" +

@@ -18,9 +18,10 @@
 }
 
 .home-hero__lede {
-  max-width: 56ch;
+  max-width: 60ch;
   font-size: var(--step-1);
   color: var(--text-600);
+  line-height: 1.7;
   margin-bottom: var(--space-lg);
 }
 

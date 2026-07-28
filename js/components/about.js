@@ -8,18 +8,6 @@ window.PortfolioAbout = (function () {
     if (!mount) return;
     var profile = window.PortfolioData.profile;
 
-    var skillsHTML = Object.keys(profile.skills)
-      .map(function (group) {
-        return (
-          '<div class="skills-group">' +
-          '<span class="skills-group__label">' + group + "</span>" +
-          '<div class="skills-group__items">' +
-          profile.skills[group].map(function (s) { return '<span class="chip">' + s + "</span>"; }).join("") +
-          "</div></div>"
-        );
-      })
-      .join("");
-
     var expHTML = profile.experience
       .map(function (e) {
         return (
@@ -35,15 +23,21 @@ window.PortfolioAbout = (function () {
       .join("");
 
     mount.innerHTML =
-      '<div class="section-eyebrow"><span class="index">05 · Profile</span><h2>About</h2></div>' +
-      '<div class="about-grid">' +
-      '<div class="about-bio">' +
+      '<div class="section-eyebrow"><span class="index">05 · Profile</span><h2>About Me</h2></div>' +
+      '<div class="about-container">' +
+      '  <div class="about-bio">' +
+      '    <h3 class="about-section-title">Background & Research Interests</h3>' +
       profile.bio.map(function (p) { return "<p>" + p + "</p>"; }).join("") +
-      '<p class="about-bio__signoff">' + profile.signoff + "</p>" +
-      "</div>" +
-      "<div class=\"about-skills\">" + skillsHTML + "</div>" +
-      "</div>" +
-      '<div class="experience-list">' + expHTML + "</div>";
+      '    <blockquote class="about-quote">' +
+      '      <p class="about-quote__text">“If the path to what you want seems too easy, then you\'re on the wrong path.”</p>' +
+      '      <cite class="about-quote__author">— Monkey D. Luffy</cite>' +
+      '    </blockquote>' +
+      '  </div>' +
+      '  <div class="about-experience">' +
+      '    <h3 class="about-section-title">Education & Background</h3>' +
+      '    <div class="experience-list">' + expHTML + "</div>" +
+      '  </div>' +
+      '</div>';
   }
 
   return { render: render };

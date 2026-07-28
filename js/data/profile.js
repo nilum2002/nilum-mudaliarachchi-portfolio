@@ -8,18 +8,18 @@ window.PortfolioData = window.PortfolioData || {};
 window.PortfolioData.profile = {
   name: "Nilum Mudaliarachchi",
   initials: "NS",
-  role: "Robotics | Embeded Systems | Machine Learning | Computer Vision",
+  avatarImg: "assets/profile.png",
+  role: "Robotics • Embedded Systems • Machine Learning • Computer Vision",
   kicker: "",
   heroTitle: "Hi, I'm Nilum.",
   heroLede:
-    "I'm a 3rd year Computer Scinece and Engineering undergraduate in University of Moratuwa, Sri Lanka. " +
-    "I'm truly passionate about Robotics, Computer vision, Embeded Syatems and Machine Learning." +
-    "Looking for opportunities to learn and grow in these fields. I love to explore new technologies and apply them to solve real-world problems.",
+    "I'm a 3rd-year Computer Science and Engineering undergraduate at the University of Moratuwa, Sri Lanka. " +
+    "I'm truly passionate about Robotics, Computer Vision, Embedded Systems, and Machine Learning — always looking for opportunities to learn, innovate, and apply these technologies to solve real-world problems.",
   email: "nilumm.23@cse.mrt.ac.lk",
   socials: [
     { name: "GitHub", url: "https://github.com/nilum2002", icon: "github" },
     { name: "LinkedIn", url: "https://linkedin.com/", icon: "linkedin" },
-    { name: "Medium", url: "https://medium.com/", icon: "medium" },
+    { name: "Medium", url: "https://medium.com/@sachithyanilum", icon: "medium" },
     { name: "Email", url: "mailto:nilumm.23@cse.mrt.ac.lk", icon: "mail" }
   ],
   stats: [
@@ -27,41 +27,23 @@ window.PortfolioData.profile = {
     // { num: "23", label: "Projects" },
     // { num: "6yr", label: "In the field" }
   ],
+  
   bio: [
-    "I'm currently an undergraduate in Computer Science and Engineering in University of Moratuwa, Sri Lanka. " +
-    "My specialization is Integrated Computer Engineering. I have a strong passion in Robotics, Computer Vision and Machine learing on Edge.",
-    "In field of Robotics, my interestes are in to Robot Navigation, Plaining and Perception. " +
-    "Specially in Social Navigation where I see a huge gap in current methodologies. " +
-    "sketch to a running service and, sometimes, all the way to a paper.",
-    "Outside of work I mentor early-career researchers, contribute to a couple of open-source " +
-    "ML tooling projects, and am slowly working through every classic algorithms textbook I " +
-    "never finished in school."
+    "I am currently an undergraduate in Computer Science and Engineering at the University of Moratuwa, Sri Lanka, specialising in Integrated Computer Engineering. My primary research interests are in Robotics, Computer Vision, and Edge AI, with a strong focus on developing intelligent systems for real-world applications.",
+
+    "Within robotics, my research focuses on robot navigation, motion planning, and perception. I am particularly interested in social robot navigation, where I believe there are significant research challenges and opportunities to develop more proactive, human-aware navigation methodologies. I am also interested in probabilistic robotics, human motion prediction, and autonomous mobile robots.",
+
+    "Beyond robotics, I am passionate about Embedded Systems and Edge AI, where I can combine Computer Vision and Machine Learning to build efficient, intelligent systems that operate on resource-constrained devices. I also enjoy working on machine learning tooling projects and continuously strengthening my foundations by studying classic algorithms and data structures."
   ],
-  signoff: "— always happy to talk shop, reach out any time.",
-  skills: {
-    "Languages": ["Python", "TypeScript", "Go", "C++", "Rust"],
-    "ML / Research": ["PyTorch", "JAX", "Ray", "Weights & Biases", "CUDA"],
-    "Systems": ["Kubernetes", "gRPC", "PostgreSQL", "Redis", "Terraform"],
-    "Web": ["React", "Node.js", "GraphQL", "Docker"]
-  },
+
+  signoff: "\"If the path to what you want seems too easy, then you're on the wrong path.\" - Monkey D. Luffy.",
   experience: [
     {
       period: "2023 — Now",
-      role: "Senior Research Engineer",
-      org: "Northlight AI",
-      desc: "Leading efficiency work on training infrastructure for multi-billion parameter models; cut cluster cost per run by 34%."
+      role: "Undergraduate",
+      org: "University of Moratuwa",
+      desc: "Computer Science and Engineering undergraduate specialising in Integrated Computer Engineering."
     },
-    {
-      period: "2021 — 2023",
-      role: "Backend Engineer",
-      org: "Fieldstone Labs",
-      desc: "Owned the event-processing pipeline handling 40M+ events/day; migrated the fleet to Kubernetes."
-    },
-    {
-      period: "2019 — 2021",
-      role: "Graduate Researcher",
-      org: "University of Cascadia",
-      desc: "Studied optimization methods for sparse neural networks under Prof. H. Delacroix."
-    }
+
   ]
 };

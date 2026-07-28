@@ -6,62 +6,31 @@ window.PortfolioData = window.PortfolioData || {};
 
 window.PortfolioData.research = [
   {
-    id: "R-04",
-    title: "Sparse Gradient Routing for Mixture-of-Experts Training",
-    venue: "NeurIPS",
-    year: "2025",
-    authors: "A. Rivera, T. Nakamura, S. Okafor",
+    id: "R-01",
+    title: "Pixel Language Models for Low-Resource Languages – Pixel-M4",
+    venue: "University of Cascadia — Master's Thesis",
+    year: "2025 Dec ngoing",
+    authors: "",
     abstract:
-      "We introduce a routing scheme that reduces cross-device gradient traffic in MoE training " +
-      "by 41% with no measurable loss in downstream accuracy, by exploiting expert-affinity " +
-      "locality discovered during early training steps.",
-    tags: ["Distributed Training", "MoE", "Systems"],
+      "Analyzing zero-shot performance on Sinhala and Tamil. " +
+      "Testing text rendering and vocabulary-free tokenizer-less configurations on South Asian scripts",
+    tags: ["PIXEL-M4", "ViT"],
     links: [
-      { label: "Paper", url: "#" },
-      { label: "Code", url: "#" }
+      { label: "", url: "#" }
     ]
-  },
-  {
-    id: "R-03",
-    title: "Rethinking Checkpointing for Elastic GPU Clusters",
-    venue: "MLSys",
-    year: "2024",
-    authors: "A. Rivera, J. Whitfield",
-    abstract:
-      "A checkpointing strategy that decouples save frequency from cluster size, enabling elastic " +
-      "scale-in/scale-out without the usual restart penalty on preemptible hardware.",
-    tags: ["Systems", "Fault Tolerance"],
-    links: [
-      { label: "Paper", url: "#" },
-      { label: "Slides", url: "#" }
-    ]
-  },
+  }, 
   {
     id: "R-02",
-    title: "On the Generalization Gap of Sparse Networks",
-    venue: "ICML Workshop on Sparsity",
-    year: "2022",
-    authors: "A. Rivera, H. Delacroix",
+    title: "Proactive Social Navigation for 2D LiDAR Mobile Robots via DBN-Coupled Kalman Filtering for Dynamic Human Motion Prediction",
+    venue: "University of Moratuwa — 5th Semester Project",
+    year: "2026 July Ongoing",
+    authors: "",
     abstract:
-      "An empirical study across 14 pruning methods showing that generalization gap correlates " +
-      "more strongly with effective capacity than with raw parameter count.",
-    tags: ["Sparsity", "Generalization"],
+      "This project targets the specific gap this points to: accurate, mode-aware, short-horizon prediction of a human's next movement, so that the robot's local planner can act proactively. " , 
+      
+    tags: ["Social Navigation", "DRSPAAM", "Kalman Filtering", "Dynamic Human Motion Prediction"],
     links: [
-      { label: "Paper", url: "#" }
-    ]
-  },
-  {
-    id: "R-01",
-    title: "Efficient Second-Order Pruning for Convolutional Networks",
-    venue: "University of Cascadia — Master's Thesis",
-    year: "2021",
-    authors: "A. Rivera",
-    abstract:
-      "Proposes a Hessian-approximation pruning method that reaches comparable sparsity to " +
-      "magnitude pruning at a third of the compute cost.",
-    tags: ["Pruning", "CNNs"],
-    links: [
-      { label: "Thesis", url: "#" }
+      { label: "Current Progress", url: "https://github.com/nilum2002/proactive-social-nav/wiki/About-the-project." }
     ]
   }
 ];

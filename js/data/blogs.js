@@ -1,48 +1,46 @@
-/* ==========================================================================
-   BLOG DATA
-   ========================================================================== */
-
 window.PortfolioData = window.PortfolioData || {};
+
+window.PortfolioData.mediumProfile = "https://medium.com/@sachithyanilum";
 
 window.PortfolioData.blogs = [
   {
-    date: "2026-06-02",
-    title: "What I learned debugging a silent NCCL hang",
+    date: "2026-04-08",
+    title: "Project Management Methodologies and an introduction to “Jira”",
     excerpt:
-      "A three-day story about a training job that hung with no error, no logs, and no obvious cause — and the one flag that fixed it.",
-    tags: ["Systems", "Debugging"],
-    url: "#"
+      "An overview of Agile frameworks, principles, and key methodologies like Scrum and Kanban, along with why Jira is essential for software project tracking.",
+    tags: ["Project Management", "Agile", "Scrum", "Jira"],
+    url: "https://medium.com/@sachithyanilum/project-management-methodologies-and-an-introduction-to-jira-8a0ed5ac2c40"
   },
   {
-    date: "2026-03-14",
-    title: "Notes on reading papers faster without reading them worse",
+    date: "2026-01-18",
+    title: "The First Step into Computer Vision - The Convolutional Classifier",
     excerpt:
-      "The three-pass method I actually use, plus a template for turning a paper into a one-page note I'll still understand in six months.",
-    tags: ["Research", "Process"],
-    url: "#"
+      "Exploring the building blocks of Convolutional Neural Networks (CNNs), from feature extraction in the base to classification in the dense head, plus transfer learning techniques.",
+    tags: ["Computer Vision", "CNN", "Deep Learning"],
+    url: "https://medium.com/@sachithyanilum/the-first-step-into-computer-vision-the-convolutional-classifier-60a11c96db10"
   },
   {
-    date: "2025-11-20",
-    title: "Why I moved my experiment tracking off the cloud",
+    date: "2025-12-23",
+    title: "Beauty of Recursion - “Tower of Hanoi”",
     excerpt:
-      "Cost, latency, and a healthy dose of not wanting a third-party outage to block a paper deadline. Building Ledger explained.",
-    tags: ["Projects", "Tooling"],
-    url: "#"
+      "A breakdown of recursive problem solving through the classic Tower of Hanoi problem, analyzing state movements, base cases, and C++ code implementations.",
+    tags: ["Algorithms", "Recursion", "C++"],
+    url: "https://medium.com/@sachithyanilum/beauty-of-recursion-tower-of-hanoi-e6564e78d26e"
   },
   {
-    date: "2025-08-05",
-    title: "A gentle introduction to Raft, for people who just want to use it",
+    date: "2025-02-11",
+    title: "What I Know About FPGA",
     excerpt:
-      "You don't need to prove liveness properties to use consensus correctly. Here's the mental model I wish I'd had on day one.",
-    tags: ["Systems"],
-    url: "#"
+      "An introduction to Field-Programmable Gate Arrays (FPGAs), hardware-level customization, parallel processing, and their applications in AI, Signal Processing, and Embedded Systems.",
+    tags: ["FPGA", "Embedded Systems", "Hardware"],
+    url: "https://medium.com/@sachithyanilum/what-i-know-about-fpga-0bf6e8ca7117"
   },
   {
-    date: "2025-02-18",
-    title: "Mentoring notes: the questions new researchers should ask earlier",
+    date: "2025-02-08",
+    title: "Selection Sort",
     excerpt:
-      "A running list I share with every student I mentor, collected over two years of first meetings.",
-    tags: ["Research", "Mentoring"],
-    url: "#"
+      "Understanding comparison-based sorting with Selection Sort: algorithm walkthrough, time complexity analysis, and C++ vector implementation.",
+    tags: ["Algorithms", "Data Structures", "C++"],
+    url: "https://medium.com/@sachithyanilum/selection-sort-2d7b9baf46af"
   }
 ];
