@@ -33,6 +33,16 @@
 .project-card__title {
   font-size: var(--step-1);
   margin: 0;
+  flex: 1;
+  padding-right: var(--space-xs);
+}
+
+.project-card__period {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-400);
+  white-space: nowrap;
+  padding-top: 0.2em;
 }
 
 .project-card__desc {

@@ -9,7 +9,7 @@ window.PortfolioData.research = [
     id: "R-01",
     title: "Pixel Language Models for Low-Resource Languages – Pixel-M4",
     venue: "University of Cascadia — Master's Thesis",
-    year: "2025 Dec ngoing",
+    year: "2025 Dec Ongoing",
     authors: "",
     abstract:
       "Analyzing zero-shot performance on Sinhala and Tamil. " +
