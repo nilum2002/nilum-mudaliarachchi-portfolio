@@ -2,23 +2,33 @@ window.PortfolioData = window.PortfolioData || {};
 
 window.PortfolioData.projects = [
   {
-    id: "P-07",
+    id: "P-08",
     title: "Proactive Social Navigation for 2D LiDAR Mobile Robots",
     status: "2026 Jul Ongoing",
     desc: "A proactive social navigation framework combining DBN motion prediction, Kalman Filtering, DR-SPAAM LiDAR human detection, and TEB Local Planner constraints in ROS 2 Jazzy & Gazebo Harmonic.",
     stack: ["ROS 2", "Gazebo", "Nav2", "DR-SPAAM", "TEB Local Planner", "Python", "C++"],
     links: [
-      { label: "Code", url: "https://github.com/nilum2002/proactive-social-nav" }
+      { label: "Code", url: "https://github.com/nilum2002/proactive-social-nav"}
     ]
   },
   {
-    id: "P-06",
+    id: "P-07",
     title: "Autonomous Object Detection, Collection & Placement Robot",
     status: "2026 Mar – Jul",
     desc: "Fully autonomous Kobuki QBot2 mobile robot with SMACH state machine control, YOLOv8 Nano vision, Kinect RGB-D PCL 3D target localization, and Raspberry Pi 5 deployment.",
     stack: ["ROS 2 Jazzy", "YOLOv8 Nano", "Python", "OpenCV", "Kinect RGB-D", "Kobuki QBot2", "Gazebo", "SMACH"],
     links: [
       { label: "Code", url: "https://github.com/IntellisenseLab/final-project-botzilla" }
+    ]
+  },
+  {
+    id: "P-06",
+    title: "FabVis",
+    status: "2026 March Ongoing",
+    desc: "Developed a CNN based Fabric defeats classification model. Collecting and developing a comprehensive Dataset for Fabric defects under the guidance of Dr. Sulochana Sooriyaarachchi",
+    stack: ["CNN", "RCNN", "Pytorch"],
+    links: [
+      { label: "code", url: "https://github.com/nilum2002/FabVis" }
     ]
   },
   {
