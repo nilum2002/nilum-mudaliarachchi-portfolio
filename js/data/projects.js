@@ -2,11 +2,21 @@ window.PortfolioData = window.PortfolioData || {};
 
 window.PortfolioData.projects = [
   {
+    id: "P-09",
+    title: "Proactive Nav System for 2D LiDAR based Mobile Robots",
+    status: "2026 Sep - Ongoiing",
+    desc: "To be update",
+    stack: ["ROS 2", "Gazebo", "KF", "DR-SPAAM", "gRPC", "Python", "C++"],
+    links: [
+      { label: "Code", url: ""}
+    ]
+  },
+  {
     id: "P-08",
-    title: "Proactive Social Navigation for 2D LiDAR Mobile Robots",
-    status: "2026 Jul Ongoing",
-    desc: "A proactive social navigation framework combining DBN motion prediction, Kalman Filtering, DR-SPAAM LiDAR human detection, and TEB Local Planner constraints in ROS 2 Jazzy & Gazebo Harmonic.",
-    stack: ["ROS 2", "Gazebo", "Nav2", "DR-SPAAM", "TEB Local Planner", "Python", "C++"],
+    title: "A Real-Time 2D LiDAR-Based Person Detection and Tracking Pipeline for Resource-Constrained Autonomous Mobile Robots",
+    status: "2026 Jul - Sep",
+    desc: "A Realtime person detection and tracking pipeline for resource constrained autonomus Mobile Robots in Indoor Environments.",
+    stack: ["ROS 2", "Gazebo", "KF", "DR-SPAAM", "gRPC", "Python", "C++"],
     links: [
       { label: "Code", url: "https://github.com/nilum2002/proactive-social-nav"}
     ]
