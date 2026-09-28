@@ -49,7 +49,7 @@
   transition: max-height var(--dur) var(--ease);
 }
 .research-card.is-open .research-card__abstract {
-  max-height: 20em;
+  max-height: 40em;
   margin-top: var(--space-sm);
 }
 
