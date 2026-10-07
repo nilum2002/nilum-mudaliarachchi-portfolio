@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2D LiDAR Person Detection and Tracking — Nilum Mudaliarachchi</title>
+<meta name="description" content="A real-time 2D LiDAR-based person detection and tracking pipeline for resource-constrained autonomous mobile robots in indoor environments." />
+
+<link rel="icon" type="image/png" href="../../assets/profile.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Shared portfolio styles — tokens first. This page is always light (data-theme on <html>). -->
+<link rel="stylesheet" href="../../css/tokens.css">
+<link rel="stylesheet" href="../../css/base.css">
+<link rel="stylesheet" href="../../css/research-detail.css">
+</head>
+<body class="paper-body">
+
+<div class="paper-page">
+
+  <main id="paper-mount"></main>
+
+</div>
+
+<!-- Data: summary from the portfolio, page content from this folder -->
+<script src="../../js/data/research.js"></script>
+<script src="content.js"></script>
+
+<!-- Components -->
+<script src="../../js/components/icons.js"></script>
+<script src="../../js/components/research-detail.js"></script>
+
+<script>
+  var RESEARCH_ID = "R-02";
+  var mount = document.getElementById("paper-mount");
+  mount.innerHTML = window.PortfolioResearchDetail.html(RESEARCH_ID);
+  window.PortfolioResearchDetail.bind(mount);
+</script>
+
+</body>
+</html>

@@ -16,6 +16,7 @@ window.PortfolioResearch = (function () {
       '<div class="research-card__abstract">' + r.abstract + "</div>" +
       '<div class="research-card__links">' +
       r.links.map(function (l) { return '<a class="btn" href="' + l.url + '">' + l.label + "</a>"; }).join("") +
+      (r.page ? '<a class="btn btn--solid" href="' + r.page + '">Project page</a>' : "") +
       '<button type="button" class="research-card__toggle" data-toggle-abstract>Read abstract</button>' +
       "</div>" +
       "</article>"

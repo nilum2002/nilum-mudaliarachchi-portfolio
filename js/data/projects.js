@@ -18,7 +18,8 @@ window.PortfolioData.projects = [
     desc: "A Realtime person detection and tracking pipeline for resource constrained autonomus Mobile Robots in Indoor Environments.",
     stack: ["ROS 2", "Gazebo", "KF", "DR-SPAAM", "gRPC", "Python", "C++"],
     links: [
-      { label: "Code", url: "https://github.com/nilum2002/proactive-social-nav"}
+      { label: "Code", url: "https://github.com/nilum2002/proactive-social-nav"},
+      { label: "Project page", url: "research/r-02/" }
     ]
   },
   {
