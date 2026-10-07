@@ -50,9 +50,16 @@ window.PortfolioResearchDetail = (function () {
     );
   }
 
+  // Turns any YouTube link (watch, youtu.be, shorts, embed) into an embed URL.
+  function youtubeEmbed(url) {
+    var m = url.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/);
+    return m ? "https://www.youtube.com/embed/" + m[1] : null;
+  }
+
   function mediaHTML(d) {
-    if (d.video && /youtube\.com\/embed|player\.vimeo\.com/.test(d.video)) {
-      return '<div class="paper-media paper-media--video"><iframe src="' + d.video + '" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+    var embed = d.video && (youtubeEmbed(d.video) || (/player\.vimeo\.com/.test(d.video) ? d.video : null));
+    if (embed) {
+      return '<div class="paper-media paper-media--video"><iframe src="' + embed + '" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>';
     }
     if (d.video) {
       return '<div class="paper-media"><video src="' + d.video + '" controls muted playsinline></video></div>';
@@ -63,8 +70,44 @@ window.PortfolioResearchDetail = (function () {
     return "";
   }
 
+  // Paper-style (booktabs) table: optional column groups with a short rule
+  // under each, a header row, and body rows with optional gaps between blocks.
+  function tableHTML(t) {
+    var gaps = t.gapAfter || [];
+    var groups = t.groups
+      ? "<tr class=\"paper-table__groups\">" +
+        t.groups.map(function (g) {
+          return '<th colspan="' + (g.span || 1) + '"' + (g.label ? ' class="has-rule"' : "") + ">" + (g.label || "") + "</th>";
+        }).join("") +
+        "</tr>"
+      : "";
+    // The first `textColumns` columns are left-aligned labels; the rest are numbers.
+    var textCols = t.textColumns || 1;
+    var cls = function (i) { return i < textCols ? ' class="is-text"' : ""; };
+    var head = "<tr>" + t.columns.map(function (c, i) { return "<th" + cls(i) + ">" + c + "</th>"; }).join("") + "</tr>";
+    var body = t.rows.map(function (row, i) {
+      return "<tr" + (gaps.indexOf(i - 1) !== -1 ? ' class="gap"' : "") + ">" +
+        row.map(function (cell, j) { return "<td" + cls(j) + ">" + cell + "</td>"; }).join("") +
+        "</tr>";
+    }).join("");
+
+    return (
+      '<figure class="paper-table">' +
+      (t.label || t.caption
+        ? "<figcaption>" +
+          (t.label ? '<span class="paper-table__label">' + t.label + "</span>" : "") +
+          (t.caption ? '<span class="paper-table__caption">' + t.caption + "</span>" : "") +
+          "</figcaption>"
+        : "") +
+      '<div class="paper-table__scroll"><table>' +
+      "<thead>" + groups + head + "</thead><tbody>" + body + "</tbody></table></div>" +
+      "</figure>"
+    );
+  }
+
   function resultsHTML(res) {
     if (!res) return "";
+    var tables = (res.tables || []).map(tableHTML).join("");
     var stats = (res.highlights || []).map(function (h) {
       return '<div class="paper-stat"><span class="paper-stat__value">' + h.value + '</span><span class="paper-stat__label">' + h.label + "</span></div>";
     }).join("");
@@ -76,6 +119,7 @@ window.PortfolioResearchDetail = (function () {
       "Results",
       (stats ? '<div class="paper-stats">' + stats + "</div>" : "") +
       (res.text ? "<p>" + res.text + "</p>" : "") +
+      tables +
       figures
     );
   }
