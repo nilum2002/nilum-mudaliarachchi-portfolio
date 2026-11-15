@@ -15,7 +15,7 @@ window.PortfolioAbout = (function () {
           '<div class="exp-item__period">' + e.period + "</div>" +
           "<div>" +
           '<div class="exp-item__role">' + e.role + "</div>" +
-          '<span class="exp-item__org">' + e.org + "</span>" +
+          '<span class="exp-item__org">' + "<a href=" + e.url + ">" + e.org+ "</a>" + "</span>" +
           '<p class="exp-item__desc">' + e.desc + "</p>" +
           "</div></div>"
         );
@@ -34,7 +34,7 @@ window.PortfolioAbout = (function () {
       '    </blockquote>' +
       '  </div>' +
       '  <div class="about-experience">' +
-      '    <h3 class="about-section-title">Education & Background</h3>' +
+      '    <h3 class="about-section-title">Education, Background & Working Experience</h3>' +
       '    <div class="experience-list">' + expHTML + "</div>" +
       '  </div>' +
       '</div>';
