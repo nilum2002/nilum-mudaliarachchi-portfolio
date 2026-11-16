@@ -18,7 +18,7 @@ window.PortfolioHome = (function () {
     mount.innerHTML =
       '<div class="home-hero">' +
       '<div class="home-hero__kicker">' + profile.kicker + "</div>" +
-      "<h1>" + profile.heroTitle + "</h1>" +
+      "<h1>" + profile.heroTitle + ' <img src="https://media.tenor.com/a2m-Y3dLmD0AAAAj/mona-github-loading-github.gif" alt="wave" class="home-hero__wave" />' + "</h1>" +
       '<p class="home-hero__lede">' + profile.heroLede + "</p>" +
       '<div class="home-hero__actions">' +
       '<a class="btn btn--solid" href="#projects" data-nav-link="projects">View projects ' + window.PortfolioIcons.arrow + "</a>" +
