@@ -42,8 +42,17 @@ window.PortfolioData.profile = {
       period: "2023 — Now",
       role: "Undergraduate",
       org: "University of Moratuwa",
-      desc: "Computer Science and Engineering undergraduate specialising in Integrated Computer Engineering."
+      desc: "Computer Science and Engineering undergraduate specialising in Integrated Computer Engineering.", 
+      url: "https://uom.lk/"
+
     },
+    {
+      period: "2026 Nov — Now",
+      role: "AI and Software Engineer Intern",
+      org: "Thermotune",
+      desc: "Intern AI and Softwear Engineer at Thermotune",
+      url: "https://www.thermotune.com/"
+    }
 
   ]
 };

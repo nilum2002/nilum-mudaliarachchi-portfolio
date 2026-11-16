@@ -17,6 +17,14 @@
   margin-bottom: var(--space-md);
 }
 
+.home-hero__wave {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
 .home-hero__lede {
   max-width: 60ch;
   font-size: var(--step-1);
